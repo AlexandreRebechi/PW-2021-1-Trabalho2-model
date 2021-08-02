@@ -10,7 +10,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-     <dependencies>
+    <dependencies>
         <!-- hibernate 5.3.8 --> 
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -37,61 +37,6 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.5</version>
         </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.core</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.asm</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.antlr</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.jpa</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.jpa.jpql</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.moxy</artifactId>
-               <version>2.7.7</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>javax.persistence</artifactId>
-               <version>2.2.1</version>
-          </dependency>
-          <dependency>
-               <groupId>org.eclipse.persistence</groupId>
-               <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
-               <version>2.7.7</version>
-               <scope>provided</scope>
-          </dependency>
-     </dependencies>
-    
-    <build>
-        <plugins>
-            <!-- adicionar para ele não tentar executar os testes ao limpar e construir -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12</version>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
-            </plugin>   
-        </plugins>
-        
-    </build>           
+    </dependencies>    
+          
 </project>
